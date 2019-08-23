@@ -1,0 +1,178 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "d7fa94ee4ec37e46bf34f16562c6b874",
+    "entities": [
+      {
+        "tableName": "Aqi",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `SiteName` TEXT, `County` TEXT, `AQI` TEXT, `Pollutant` TEXT, `Status` TEXT, `SO2` TEXT, `CO` TEXT, `CO_8hr` TEXT, `O3` TEXT, `O3_8h` TEXT, `PM10` TEXT, `PM25` TEXT, `NO2` TEXT, `NOx` TEXT, `NO` TEXT, `WindSpeed` TEXT, `WindDirec` TEXT, `PublishTime` TEXT, `PM25_AVG` TEXT, `PM10_AVG` TEXT, `SO2_AVG` TEXT, `Longitude` TEXT, `Latitude` TEXT, `SiteId` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "SiteName",
+            "columnName": "SiteName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "County",
+            "columnName": "County",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "AQI",
+            "columnName": "AQI",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Pollutant",
+            "columnName": "Pollutant",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Status",
+            "columnName": "Status",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "SO2",
+            "columnName": "SO2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CO",
+            "columnName": "CO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CO_8hr",
+            "columnName": "CO_8hr",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "O3",
+            "columnName": "O3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "O3_8h",
+            "columnName": "O3_8h",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PM10",
+            "columnName": "PM10",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PM25",
+            "columnName": "PM25",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "NO2",
+            "columnName": "NO2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "NOx",
+            "columnName": "NOx",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "NO",
+            "columnName": "NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WindSpeed",
+            "columnName": "WindSpeed",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "WindDirec",
+            "columnName": "WindDirec",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PublishTime",
+            "columnName": "PublishTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PM25_AVG",
+            "columnName": "PM25_AVG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "PM10_AVG",
+            "columnName": "PM10_AVG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "SO2_AVG",
+            "columnName": "SO2_AVG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Longitude",
+            "columnName": "Longitude",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Latitude",
+            "columnName": "Latitude",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "SiteId",
+            "columnName": "SiteId",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd7fa94ee4ec37e46bf34f16562c6b874')"
+    ]
+  }
+}
